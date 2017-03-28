@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+.converter {
+    background-color: #D4F4A9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.converter h2 {
+    padding: 0 3vw;
+    color: #5D8F19;
+}
+
+#converted-file-field {
+    box-sizing: border-box;
+    background-color: #f2ffe6;
+    border: 1px dashed #6E9A31;
+    width: 90vw;
+    max-width: 500px;
+    padding: 22px;
+    resize: none;
+    margin: 30px 0;
+}
+
+#choose-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #D4F4A9;
+    background-color: #83B83B;
+    border: none;
+    border-bottom: 2px solid #5D8F19;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    outline: none;
+    width: 20vw;
+    min-width: 150px;
+    height: 60px;
+}
+
+.btn:hover {
+    -webkit-transition: color 0.3s, background-color 1.5s, border-bottom-color 1.5s;
+    transition: color 0.3s, background-color 1.5s, border-bottom-color 1.5s;
+    background-color: #7bcbea;
+    border-bottom-color: #264d73;
+    color: #fff;
+}
+
+.btn:active {
+    color: #9FCB64;
+    background-color: #6E9A31;
+    border-color: #6E9A31;
+}
+#copy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+#copy-button:hover {
+    cursor: pointer;
+}
+.copy-ico {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url("../img/copy.png") no-repeat center;
+    background-size: contain;
+    margin-right: 0.3em;
+}

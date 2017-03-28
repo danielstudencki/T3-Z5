@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Markdown Converter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="converter">
+            
+            <h2>Markdown to HTML file converter</h2>
+
+            <form>
+                <input id="choose-file" type="file" name="markdown" accept="text">
+                <label for="choose-file" class="btn">Choose file to convert</label>
+            </form>
+
+            <textarea id="converted-file-field" rows="10" readonly></textarea>
+
+            <div id="copy-button" class="btn"><span class="copy-ico"></span>Copy code</div>
+
+        </div>    
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
