@@ -36,8 +36,12 @@
             readFile: function(e) {
                 this.file = this.inputFile.files[0];
 
-                this.reader.onload = this.displayConverted.bind(this);
-                this.reader.readAsText(this.file);
+                if(this.checkFileType()){
+                    this.reader.onload = this.displayConverted.bind(this);
+                    this.reader.readAsText(this.file);
+                } else {
+                    this.convertedField.value = "Cannot read file. Please choose text type file.";
+                }
             },
 
             convertToHTML: function() {
@@ -51,11 +55,16 @@
             },
 
             copyToClipboard: function(e) {
-                if(this.convertedField.value !== "")
+                if(this.convertedField.value !== "") {
                     this.convertedField.select();
                     document.execCommand('copy');
                 }
-            };
+            },
+
+            checkFileType: function() {
+                return (this.file.type === "text/plain") ? true : false;
+            } 
+        };
 
         converter.init(); 
 
