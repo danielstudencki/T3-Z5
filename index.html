@@ -9,8 +9,8 @@
     <body>
         <div class="converter">
             
-            <h2>Markdown to HTML file converter</h2>
-
+            <h2 class="title">Markdown to HTML file converter</h2>
+            
             <form>
                 <input id="choose-file" type="file" name="markdown" accept="text">
                 <label for="choose-file" class="btn">Choose file to convert</label>
@@ -19,6 +19,17 @@
             <textarea id="converted-file-field" rows="10" readonly></textarea>
 
             <div id="copy-button" class="btn"><span class="copy-ico"></span>Copy code</div>
+
+
+            <section id="html-preview">
+
+                <h2 class="title">HTML Preview</h2>
+
+                <div id="preview-field">
+                    
+                </div>
+                
+            </section>
 
         </div>    
 
